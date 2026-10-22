@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "TailorBook BD",
+    "slug": "tailorbook-bd",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "tailorbookbd",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-font",
+      "expo-notifications",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "backgroundColor": "#0F766E"
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.tricosoft.tailorbookbd",
+      "versionCode": 1,
+      "permissions": [
+        "POST_NOTIFICATIONS"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-foreground.png",
+        "backgroundImage": "./assets/adaptive-background.png",
+        "monochromeImage": "./assets/adaptive-monochrome.png",
+        "backgroundColor": "#0F766E"
+      }
+    },
+    "icon": "./assets/icon.png",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "8711f551-e7d2-497a-918e-e19806b27fee"
+      }
+    }
+  }
+}

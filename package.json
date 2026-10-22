@@ -1,0 +1,38 @@
+{
+  "name": "tailorbook-bd",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types __tests__/*.test.ts",
+    "ios": "expo run:ios"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^15.0.0",
+    "@react-native-community/datetimepicker": "8.4.4",
+    "expo": "~54.0.0",
+    "expo-constants": "~18.0.0",
+    "expo-document-picker": "~14.0.0",
+    "expo-file-system": "~19.0.0",
+    "expo-font": "~14.0.0",
+    "expo-linking": "~8.0.12",
+    "expo-notifications": "~0.32.0",
+    "expo-print": "~15.0.0",
+    "expo-router": "~6.0.0",
+    "expo-sharing": "~14.0.0",
+    "expo-splash-screen": "~31.0.0",
+    "expo-sqlite": "~16.0.0",
+    "expo-status-bar": "~3.0.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.2",
+    "@types/react": "~19.1.0",
+    "@types/node": "^22.0.0"
+  }
+}
