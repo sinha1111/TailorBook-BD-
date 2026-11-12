@@ -43,6 +43,7 @@ function Screens() {
         <Stack.Screen name="privacy" options={t('এক্সপোর্ট ও গোপনীয়তা', 'Export & Privacy')} />
         <Stack.Screen name="pro" options={t('প্রো', 'Pro')} />
         <Stack.Screen name="about" options={t('অ্যাপ সম্পর্কে', 'About')} />
+        <Stack.Screen name="device-preview" options={t('ডিভাইস প্রিভিউ', 'Device preview')} />
       </Stack>
     </>
   );
