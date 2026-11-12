@@ -18,11 +18,21 @@
           "imageWidth": 220,
           "backgroundColor": "#0F766E"
         }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableProguardInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true
+          }
+        }
       ]
     ],
     "android": {
       "package": "com.tricosoft.tailorbookbd",
       "versionCode": 1,
+      "edgeToEdgeEnabled": true,
       "permissions": [
         "POST_NOTIFICATIONS"
       ],
