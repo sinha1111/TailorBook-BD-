@@ -27,12 +27,13 @@
             "enableShrinkResourcesInReleaseBuilds": true
           }
         }
-      ]
+      ],
+      "@react-native-community/datetimepicker",
+      "expo-sharing"
     ],
     "android": {
       "package": "com.tricosoft.tailorbookbd",
       "versionCode": 1,
-      "edgeToEdgeEnabled": true,
       "permissions": [
         "POST_NOTIFICATIONS"
       ],
