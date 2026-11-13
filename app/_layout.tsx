@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect } from 'react';
-import { ActivityIndicator } from 'react-native';
+import { ActivityIndicator, Platform } from 'react-native';
 import { Stack, useRootNavigationState, useRouter } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { SQLiteProvider, useSQLiteContext, type SQLiteDatabase } from 'expo-sqlite';
@@ -43,7 +43,7 @@ function Screens() {
         <Stack.Screen name="privacy" options={t('এক্সপোর্ট ও গোপনীয়তা', 'Export & Privacy')} />
         <Stack.Screen name="pro" options={t('প্রো', 'Pro')} />
         <Stack.Screen name="about" options={t('অ্যাপ সম্পর্কে', 'About')} />
-        <Stack.Screen name="device-preview" options={t('ডিভাইস প্রিভিউ', 'Device preview')} />
+        {Platform.OS === 'web' && <Stack.Screen name="device-preview" options={t('ডিভাইস প্রিভিউ', 'Device preview')} />}
       </Stack>
     </>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Platform, ScrollView, Pressable, Text, View } from 'react-native';
+import { ScrollView, Pressable, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Chip, Row } from '@/ui/components';
 import { useLang } from '@/ui/lang';
@@ -21,16 +21,6 @@ export default function DevicePreview() {
   const { L } = useLang();
   const [device, setDevice] = useState<Device>(IPHONE_14);
   const [reloadKey, setReloadKey] = useState(0);
-
-  if (Platform.OS !== 'web') {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: spacing.xl, backgroundColor: colors.background }}>
-        <Text style={{ fontSize: fonts.body, color: colors.muted, textAlign: 'center' }}>
-          {L('এই প্রিভিউ শুধু ওয়েব ব্রাউজারে দেখা যায়।', 'This preview is only available in a web browser.')}
-        </Text>
-      </View>
-    );
-  }
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
