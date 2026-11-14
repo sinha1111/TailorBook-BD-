@@ -7,6 +7,7 @@ import { runMigrations } from '@/db/migrations';
 import { getPref } from '@/db/settings';
 import { syncReminders } from '@/services/reminders';
 import { LangProvider, useLang } from '@/ui/lang';
+import { useFrameworkReady } from '@/ui/useFrameworkReady';
 import { colors } from '@/ui/theme';
 
 function Screens() {
@@ -55,6 +56,7 @@ async function initDb(db: SQLiteDatabase): Promise<void> {
 }
 
 export default function Root() {
+  useFrameworkReady();
   return (
     <Suspense fallback={<ActivityIndicator style={{ flex: 1 }} color={colors.primary} />}>
       <SQLiteProvider databaseName="tailorbook.db" onInit={initDb} useSuspense>
